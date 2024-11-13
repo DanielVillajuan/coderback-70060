@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
-import {fileURLToPath} from 'url';
-import { dirname } from 'path';
+import {fileURLToPath} from 'node:url';
+import { dirname } from 'node:path';
 
 export const createHash = async(password) =>{
     const salts = await bcrypt.genSalt(10);
